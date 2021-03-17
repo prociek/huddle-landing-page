@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  background: url("./images/bg-mobile.svg") no-repeat, hsl(257, 40%, 49%);
+  background-size: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  width: 8rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.illustration-container {
+  width: 80vw;
+  margin-top: 3rem;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
