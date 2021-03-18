@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
+:root {
+  --primary: hsl(257, 40%, 49%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +12,22 @@
 
 body {
   font-family: Open Sans, sans-serif;
-  background: url("./images/bg-mobile.svg") no-repeat, hsl(257, 40%, 49%);
+  background: url("./images/bg-mobile.svg") no-repeat, var(--primary);
   background-size: 100%;
-  padding: 2.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .logo-container {
+  align-self: flex-start;
   width: 8rem;
 }
 
@@ -27,12 +38,38 @@ body {
 
 .illustration-container {
   width: 80vw;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 
 .illustration {
   width: 100%;
   height: auto;
+}
+
+.heading {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.4rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 3rem;
+  padding: 0.8rem;
+  width: 13rem;
+  color: var(--primary);
 }
 
 .attribution {
